@@ -78,10 +78,25 @@ $ git clone https://github.com/fateshelled/OnnxGraphQt \
 
 $ python3 OnnxGraphQt/onnxgraphqt/main.py
 ```
-
+### 2-2. win10 安装建议
+1. pip install -U pydot PyQt5  --user
+2. 设置系统环境变量
+   ![image](https://user-images.githubusercontent.com/28527493/172283064-5db8bbdf-9c1a-4216-bce2-b9d65dc1dce6.png)
+3. NodeGraphQt 包安装 和 OnnxGraphQt（GitHub超时）
+  ```bash
+  $ git clone https://github.com/jchanvfx/NodeGraphQt.git
+  $ cd NodeGraphQt
+  $ python setup.py install 
+  $ git clone https://github.com/fateshelled/OnnxGraphQt \
+  $ cd OnnxGraphQt \
+  $ ## 先屏蔽 requirements.txt 中 git+https://github.com/jchanvfx/NodeGraphQt.git@v0.2.2#egg=NodeGraphQt
+  $ sudo python3 -m pip install -r requirements.txt -U \
+  $ cd ..
+  $ python3 OnnxGraphQt/onnxgraphqt/main.py
+   ```
 ## 3. Acknowledgments
 1. https://github.com/onnx/onnx/blob/main/docs/PythonAPIOverview.md
-2. https://docs.nvidia.com/deeplearning/tensorrt/onnx-graphsurgeon/docs/index.html
+ https://docs.nvidia.com/deeplearning/tensorrt/onnx-graphsurgeon/docs/index.html
 3. https://github.com/NVIDIA/TensorRT/tree/main/tools/onnx-graphsurgeon
 4. https://github.com/onnx/onnx/blob/main/docs/Operators.md
 
