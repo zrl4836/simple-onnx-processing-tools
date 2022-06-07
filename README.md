@@ -81,6 +81,8 @@ $ python3 OnnxGraphQt/onnxgraphqt/main.py
 ### 2-2. win10 安装建议
 1. pip install -U pydot PyQt5  --user
 2. 设置系统环境变量
+
+
    ![image](https://user-images.githubusercontent.com/28527493/172283064-5db8bbdf-9c1a-4216-bce2-b9d65dc1dce6.png)
 3. NodeGraphQt 包安装 和 OnnxGraphQt（GitHub超时）
   ```bash
